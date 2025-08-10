@@ -2,5 +2,13 @@
 
 :root {
   font-family: Inter, sans-serif;
+  @apply dark:bg-gray-900 dark:text-white;
 }
 
+.brand-con-logo {
+  @apply w-12 pt-2.5
+}
+
+.brand-con {
+  @apply flex flex-row items-center gap-2 text-white font-bold text-lg
+}

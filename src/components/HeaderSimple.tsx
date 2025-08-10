@@ -1,14 +1,14 @@
 import { useState } from 'react';
 import { Burger, Container, Group } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
-import { MantineLogo } from '@mantinex/mantine-logo';
+import logo from '../assets/favi.png';
 import classes from "../mantine/HeaderSimple.module.scss";
 
 const links = [
-  { link: '/about', label: 'Features' },
-  { link: '/pricing', label: 'Pricing' },
-  { link: '/learn', label: 'Learn' },
-  { link: '/community', label: 'Community' },
+  { link: '/trip-planner', label: 'Trip Planner' },
+  { link: '/budget', label: 'Budget' },
+  { link: '/map', label: 'Map' },
+  { link: '/settings', label: 'Preferences' },
 ];
 
 export function HeaderSimple() {
@@ -33,7 +33,10 @@ export function HeaderSimple() {
   return (
     <header className={classes.header}>
       <Container size="md" className={classes.inner}>
-        <MantineLogo size={28} />
+        <div className="brand-con">
+          <img src={logo} alt="logo" className='brand-con-logo' />
+          <div className="brand-con-title">Travel Planner</div>
+        </div>
         <Group gap={5} visibleFrom="xs">
           {items}
         </Group>
