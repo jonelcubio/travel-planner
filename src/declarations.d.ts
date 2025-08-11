@@ -1,9 +1,9 @@
 declare module '*.png' {
-  const value: any;
+  let value: any;
   export default value;
 }
 
 declare module '*.scss' {
-  const content: any;
+  let content: any;
   export default content;
 }

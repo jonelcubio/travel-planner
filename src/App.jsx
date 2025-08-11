@@ -3,7 +3,7 @@ import '@mantine/core/styles.css';
 
 import { MantineProvider } from '@mantine/core';
 import { HeaderSimple } from "./components/HeaderSimple";
-
+import { ArticleCardImage } from "./components/ArticleCardImage";
 
 export default function App () {
   return(
@@ -15,6 +15,8 @@ export default function App () {
       />
 
     <HeaderSimple />
+    <ArticleCardImage />
+   
     
     </MantineProvider>
     </>
