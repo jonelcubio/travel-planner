@@ -9,6 +9,7 @@ const links = [
   { link: '/budget', label: 'Budget' },
   { link: '/map', label: 'Map' },
   { link: '/settings', label: 'Preferences' },
+  { link: '/account', label: 'Account' },
 ];
 
 export function HeaderSimple() {
@@ -35,8 +36,16 @@ export function HeaderSimple() {
       <Container size="md" className={classes.inner}>
         <div className="brand-con">
           <img src={logo} alt="logo" className='brand-con-logo' />
-          <div className="brand-con-title">Travel Planner</div>
+
+          <div className="brand-li">
+            <div className="brand-con-title">Travel Planner</div>
+            <div className="brand-con-sub">Made with love by Jonelle.</div>
         </div>
+      </div>
+        
+        
+
+       
         <Group gap={5} visibleFrom="xs">
           {items}
         </Group>
