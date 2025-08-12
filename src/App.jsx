@@ -3,7 +3,7 @@ import '@mantine/core/styles.css';
 
 import { MantineProvider } from '@mantine/core';
 import { HeaderSimple } from "./components/HeaderSimple";
-import { ArticleCardImage } from "./components/ArticleCardImage";
+import HeroGrid from "./components/HeroGrid";
 
 export default function App () {
   return(
@@ -15,8 +15,7 @@ export default function App () {
       />
 
     <HeaderSimple />
-    <ArticleCardImage />
-   
+    <HeroGrid />
     
     </MantineProvider>
     </>
