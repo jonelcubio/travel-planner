@@ -17,7 +17,7 @@ const ArticleCardImageData = [{
 }, {
   id: 5,
   title: 'Singapore',
-  img: 'https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?q=80&w=388&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+  img: 'https://images.unsplash.com/photo-1555217851-6141535bd771?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
 }];
 
 export default ArticleCardImageData;

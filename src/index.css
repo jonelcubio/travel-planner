@@ -17,7 +17,7 @@
 }
 
 .hero-grid-img {
-  @apply w-[230px] object-cover rounded-lg shadow-md;
+  @apply w-[250px] object-cover rounded-lg shadow-md;
 }
 
 .hero-grid-parent {
@@ -30,9 +30,13 @@
 
 .hero-grid-li {
   @apply hover:bg-[#8c52ff] hover:scale-105 transform ease-in hover:text-white hover:rounded-lg;
+  @apply my-2.5
 }
-
 
 .hero-grid-title {
   @apply font-semibold text-center;
+}
+
+.github-ico {
+  @apply w-14 hover: scale-105 transform ease-in;
 }

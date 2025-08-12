@@ -3,13 +3,14 @@ import { Burger, Container, Group } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import logo from '../assets/favi.png';
 import classes from "../mantine/HeaderSimple.module.scss";
+import github from "../assets/github.png";
 
 const links = [
   { link: '/trip-planner', label: 'Trip Planner' },
   { link: '/budget', label: 'Budget' },
   { link: '/map', label: 'Map' },
   { link: '/settings', label: 'Preferences' },
-  { link: '/account', label: 'Account' },
+  { link: '/github-repo', label: <img src={github} alt="Github" className='github-ico' /> },
 ];
 
 export function HeaderSimple() {
@@ -18,7 +19,7 @@ export function HeaderSimple() {
 
   const items = links.map((link) => (
     <a
-      key={link.label}
+      key={link.link}
       href={link.link}
       className={classes.link}
       data-active={active === link.link || undefined}

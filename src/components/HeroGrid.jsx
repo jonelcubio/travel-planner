@@ -28,6 +28,7 @@ export default function HeroGrid() {
             <div className="hero-grid-title">{game.title}</div>
           </div>
         ))}
+  
       </div>
     </main>
   );
